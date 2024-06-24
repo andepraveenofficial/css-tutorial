@@ -1,0 +1,22 @@
+.app-container {
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+.sender-message {
+    background-color: greenyellow;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+.receiver-message {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: flex-end;
+}

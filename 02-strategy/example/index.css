@@ -1,0 +1,30 @@
+/* Step 1: Box Model - Defines the size, padding, margin, and border of the component */
+.component {
+  width: 300px; /* Sets the width of the component */
+  height: 150px; /* Sets the height of the component */
+  padding: 16px; /* Adds space inside the component around its content */
+  margin: 20px; /* Adds space outside the component */
+  border: 1px solid #ccc; /* Adds a light gray border */
+}
+
+/* Step 2: Layout - Uses Flexbox to position content inside the component */
+.component {
+  display: flex; /* Enables Flexbox for layout */
+  align-items: center; /* Vertically centers content */
+  justify-content: space-between; /* Distributes space between elements */
+}
+
+/* Step 3: Typography - Defines text styling */
+.component-text {
+  font-size: 16px; /* Sets the font size */
+  font-family: 'Inter', sans-serif; /* Specifies the font */
+  line-height: 1.5; /* Sets the space between lines of text */
+}
+
+/* Step 4: Paint - Adds background, color, and styling effects */
+.component {
+  background-color: #fff; /* Sets a white background */
+  color: #333; /* Sets text color to dark gray */
+  border-radius: 8px; /* Rounds the corners of the component */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}

@@ -20,6 +20,7 @@
 - CSS Units
 - CSS Custom Property
 - CSS Animation
+- Documentation
 
 </details>
 
@@ -446,7 +447,7 @@ The universal selector selects all the HTML elements in an HTML document.
 ### background-position
 
 `background-position: top left;`
-![Background Position](https://res.cloudinary.com/dwrwbjd3h/image/upload/v1710999947/portfolio/markdown/css/background-position.jpg)
+![Background Position](./assets/01-background-position.jpg)
 
 ### background-attachment
 
@@ -482,7 +483,7 @@ shortcut {
 4. margin
 5. outline
 
-![Box Properties](https://res.cloudinary.com/dwrwbjd3h/image/upload/v1710999949/portfolio/markdown/css/box-properties.jpg)
+![Box Properties](./assets/02-box-properties.jpg)
 
 ### CSS Box Model
 
@@ -937,7 +938,7 @@ The position property in CSS is used to control the positioning of an element wi
 4. `position:fixed;`
 5. `position:sticky;`
 
-![Positions](https://res.cloudinary.com/dwrwbjd3h/image/upload/v1710999953/portfolio/markdown/css/positions.png)
+![Positions](./assets/03-positions.png)
 
 - **static** => default position of any html element.
 - **relative** => It is used to set the element relative to its normal position.
@@ -1066,6 +1067,16 @@ step2 => apply animation rules
 }
 ```
 
+</details>
+
+---
+
+<details>
+<summary>Documentation</summary>
+
+## Documentation
+
+- webdev : `https://web.dev/learn/css`
 </details>
 
 ---

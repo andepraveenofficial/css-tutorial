@@ -1,0 +1,10 @@
+Flexbox sizing :
+=================
+Flexbox sizing Properties:
+---------
+Flex items can Scale Up or Scale Down their size based on the available space.
+Css Flexbox sizing can have the following properties:
+-----------
+flex-grow
+flex-shrink
+===========

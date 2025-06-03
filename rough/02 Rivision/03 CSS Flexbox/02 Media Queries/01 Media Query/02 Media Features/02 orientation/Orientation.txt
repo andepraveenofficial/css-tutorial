@@ -1,0 +1,10 @@
+Orientation:
+============
+The two most common types of orientation are:
+
+landscape => The width of the device is greater than the height.
+portrait => The height of the device is greater than the width.
+========================
+
+
+

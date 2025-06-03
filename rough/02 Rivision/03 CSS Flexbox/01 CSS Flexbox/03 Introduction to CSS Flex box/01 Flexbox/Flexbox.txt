@@ -1,0 +1,19 @@
+Flexbox:
+=========
+Flexbox is a layout method that helps to arrange the HTML elements in rows(harizontally) or columns(vertically).
+--------------
+Flexbox Layout with CSS Properties:
+-------------
+display
+flex-direction
+justify-content
+align-items
+flex-wrap
+flex-flow
+align-content
+align-self
+flex-grow
+flex-basis
+flex-shrink
+order and many more...
+===========================

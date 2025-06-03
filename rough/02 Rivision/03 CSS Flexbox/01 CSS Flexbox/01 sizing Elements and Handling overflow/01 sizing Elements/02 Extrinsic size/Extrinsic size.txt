@@ -1,0 +1,4 @@
+Extrinsic size:
+===============
+If we set a specific size to an element, we call an Extrinsic size.
+-------------------

@@ -1,0 +1,11 @@
+Layout:
+=========
+A Layout is a pattern to structure the information and arrange the elements on the website.
+----------
+Methods to Design a Layout:
+--------
+Mainly, there are two methods that help design the webpage layout.
+
+1) Flexbox(stable)
+2) CSS Grid(Advanced & Fast growing but not stable)
+=========================

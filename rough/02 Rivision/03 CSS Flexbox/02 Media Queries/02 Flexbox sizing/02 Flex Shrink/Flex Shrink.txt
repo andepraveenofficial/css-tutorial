@@ -1,0 +1,10 @@
+Flex Shrink
+============
+The flex-shrink property specifies how flex items Scale Down their size based on the available space.
+Flex Shrink property has the following values:
+------------
+1 (default)
+0
++ve values
+================
+

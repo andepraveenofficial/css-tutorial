@@ -9,12 +9,10 @@
 
 - Introduction
 - Selectors
-- Properties
-- Alignment
-- Text Properties
-- Box Properties
-- Handling Overflow
+- Makeup
+- Box Model
 - Layout
+- Handling Overflow
 - Media Queries
 - Positions
 - CSS Units
@@ -33,9 +31,11 @@
 
 **CSS** stands for **Cascading Style Sheets**
 
-- CSS used in web development to apply styles to the html document.
-- We can create Responsive webpages by combining HTML & CSS.
-- Once we create a style sheet with `.css` file, we can use it for multiple `.html` files.
+- CSS is used in web development to apply styling and layout to HTML documents (web pages).
+- By combining HTML and CSS, we can create responsive web pages that work well across different screen sizes.
+- We can use single `.css` file for multiple `.html` files.
+
+![With and Without CSS](./assets/01-with-and-without-css.png)
 
 ### Syntax
 
@@ -54,18 +54,22 @@ We can apply **CSS** in 3 ways,
 2. Internal
 3. External
 
-### **Inline**
+### 1. Inline
 
-we can use `style` attribute to apply css styles to a particular element.
+- we can use `style` attribute to apply css styles to a particular element.
 
 ```html
 <tag style="property1: value1; property2: value2;">Content</tag>
 ```
 
-### **Internal**
+```html
+<h1 style="color: green; background-color: orange;">content</h1>
+```
 
-we can use `style` element to write `css code` for a particular HTML document.  
-Generally, we use `style` element in head part.
+### 2. Internal
+
+- we can use `style` element to write `css code` for a particular HTML document.  
+  Generally, we use `style` element in head part.
 
 ```html index.html
 <!DOCTYPE html>
@@ -73,8 +77,8 @@ Generally, we use `style` element in head part.
 	<head>
 		<style>
 			.heading {
-				color: "green";
-				background-color: "orange";
+				color: green;
+				background-color: orange;
 			}
 		</style>
 	</head>
@@ -84,16 +88,16 @@ Generally, we use `style` element in head part.
 </html>
 ```
 
-### **External**
+### 3. External
 
-we can create External CSS Style Sheet with `.css` file extension.  
-by using the HTML `link` element to link the External CSS file.
+- we can create External CSS Style Sheet with `.css` file extension.
+- By using the HTML <link> element to link the external CSS file to the HTML document in the `<head>` section.
 
 ```html index.html
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="./index.css" />
 	</head>
 	<body>
 		<h1 class="heading">content</h1>
@@ -117,9 +121,9 @@ by using the HTML `link` element to link the External CSS file.
 - Specificity
 - Cascade
 
-### Inheritance
+#### Inheritance
 
-Children Inherits the Parent Property is called Inheritance.
+- Children Inherits the Parent Property is called Inheritance.
 
 ```css
 .parent {
@@ -128,9 +132,9 @@ Children Inherits the Parent Property is called Inheritance.
 }
 ```
 
-### Specificity
+#### Specificity
 
-CSS **Specificity** is how the browser decides which CSS property values are the most relevant to an HTML element and apply those CSS property values to the HTML element.
+- CSS **Specificity** is how the browser decides which CSS property values are the most relevant to an HTML element and apply those CSS property values to the HTML element.
 
 Browser gives priority to select the CSS property.
 
@@ -141,22 +145,21 @@ Browser gives priority to select the CSS property.
 5. Tag
 6. Universal
 
-### Cascade
+#### Cascade
 
-The source order of CSS Ruleset matters.  
-when two CSS Ruleset have equal specificity, the one that comes last in the CSS is applied.
+- The source order of CSS Ruleset matters.
+- when two CSS Ruleset have equal specificity, the one that comes last in the CSS is applied.
 
 ```css
-        .container {
-            background-color: greenyellow;
-            box-shadow: 0 0 10px black;
-        }
+    .container {
+        background-color: green;
+        box-shadow: 0 0 10px black;
 
-        .container {
-            / *These are applicable */
-            background-color: red;
-            box-shadow: 0 0 10px black;
-        }
+    .container {
+        / *These are applicable */
+        background-color: red;
+        box-shadow: 0 0 10px black;
+    }
 ```
 
 </details>
@@ -168,7 +171,7 @@ when two CSS Ruleset have equal specificity, the one that comes last in the CSS 
 
 ## Selectors
 
-The CSS Selectors are used to select the HTML elements that we want to apply style.
+- The CSS Selectors are used to select the HTML elements that we want to apply style.
 
 1. Tag selector = same kind of tags selection
 2. Class selector = group of elements selection
@@ -181,9 +184,9 @@ The CSS Selectors are used to select the HTML elements that we want to apply sty
 
 ### Specificity
 
-CSS Specificity is how browsers decide which CSS property values are the most relevant to an HTML element and apply those CSS property values to the HTML element.
+- CSS Specificity is how browsers decide which CSS property values are the most relevant to an HTML element and apply those CSS property values to the HTML element.
 
-selector priority from High to Low:
+selector priority from High to Low :
 
 1. !important
 2. inline styles
@@ -328,7 +331,7 @@ Apply css dynamically.
 
 The universal selector selects all the HTML elements in an HTML document.
 
-```hml
+```html
 <div>1</div>
 <div id="myBox">2</div>
 <div class="my-box">3</div>
@@ -345,44 +348,20 @@ The universal selector selects all the HTML elements in an HTML document.
 ---
 
 <details>
-<summary>Properties</summary>
+<summary>Makeup</summary>
 
-## Properties
+## Makeup
 
-1. Alignment
-2. Text Properties
-3. Background Properties
-4. Box Properties
-5. Gradients
-6. Handling Overflow
-7. Flexbox
-8. Media Queries
-9. Positions
-10. Table
+- we are adding some css properties to particular elements.
 
-</details>
+1. Text Properties
 
----
+### 1. Text Properties
 
-<details>
-<summary>Alignment</summary>
-
-## Alignment
-
-`text-align` property specifies the horizontal alignment of the text in an HTML element.
-
-- `text-align:left;`
-- `text-align:center;`
-- `text-align:right;`
-
-</details>
-
----
-
-<details>
-<summary>Text Properties</summary>
-
-### Text Properties
+1. color
+2. font-style
+3. text-align
+4.
 
 #### color
 
@@ -398,82 +377,22 @@ The universal selector selects all the HTML elements in an HTML document.
 - `text-decoration: underline;`
 - `text-transform: uppercase;`
 
-#### text spacing
+#### Alignment
 
-- `text-indent: 200px;`
-- `letter-spacing:5px;`
-- `line-height: 10px;`
-- `word-spacing: 20px;`
+`text-align` property specifies the horizontal alignment of the text in an HTML element.
 
-#### text shadow
-
-- `text-shadow:0 0 3px red;`
+- `text-align:left;`
+- `text-align:center;`
+- `text-align:right;`
 
 </details>
 
 ---
 
 <details>
-<summary>Background Properties</summary>
+<summary>Box Model</summary>
 
-## Background Properties
-
-1. background-color
-2. background-image
-3. background-repeat
-4. background-position
-5. background-attachment
-6. background-size
-
-### background-color
-
-- `background-color: "orange";`
-- `background-color: transparent;`
-
-### background-image
-
-- `background-image: url("source/bg-image.jpg");`
-- `background-image:linear-gradient(45deg,black,red,green);`
-- `background-image:linear-gradient(to left,black,red,green);`
-- `background-image:radial-gradient(black,red,green);`
-
-### background-repeat
-
-- `background-repeat:repeat;`
-- `background-repeat:no-repeat;`
-- `background-repeat:repeat-x;`
-- `background-repeat:repeat-y;`
-
-### background-position
-
-`background-position: top left;`
-![Background Position](./assets/01-background-position.jpg)
-
-### background-attachment
-
-- `background-attachment: scroll;`
-- `background-attachment: fixed;`
-
-### All Backgrounds Shortcut
-
-```css
-shortcut {
-	background: color image repeat attachment position;
-}
-```
-
-- `background:red url("./source/lion.jpg") no-repeat scroll center center;`
-
-### background-size
-
-`background-size:cover;`
-
-</details>
-
----
-
-<details>
-<summary>Box Properties</summary>
+## Box Model
 
 ## Box Properties
 
@@ -617,38 +536,57 @@ Box-Sizing property has the following values:
 - `box-shadow:x y blur color;`
 - `box-shadow:0 0 10px black;`
 
-</details>
+## Background Properties
 
----
+1. background-color
+2. background-image
+3. background-repeat
+4. background-position
+5. background-attachment
+6. background-size
 
-<details>
-<summary>Handling Overflow</summary>
+### background-color
 
-## Handling Overflow
+- `background-color: "orange";`
+- `background-color: transparent;`
 
-content overflow can be handled using the CSS overflow property.  
-**overflow** : child element is not overflowed on parent element.
+### background-image
 
-1. visible (default)=> CSS tries to avoid data loss. Hence, the `overflow:visible;` is the default value for it.
-   - `overflow:visible;`
-2. hidden => The overflow is clipped, and the rest of the content will be invisible.
-   - `overflow: hidden;`
-3. scroll => The overflow is clipped, and a scrollbar is added to see the rest of the content.
-   - `overflow: scroll;`
-   - `overflow-x: scroll;`
-   - `overflow-y: scroll;`
-4. auto => It is similar to scroll, but it adds scrollbars only when necessary.
+- `background-image: url("source/bg-image.jpg");`
+- `background-image:linear-gradient(45deg,black,red,green);`
+- `background-image:linear-gradient(to left,black,red,green);`
+- `background-image:radial-gradient(black,red,green);`
 
-- `overflow: auto;`
+### background-repeat
+
+- `background-repeat:repeat;`
+- `background-repeat:no-repeat;`
+- `background-repeat:repeat-x;`
+- `background-repeat:repeat-y;`
+
+### background-position
+
+`background-position: top left;`
+![Background Position](./assets/01-background-position.jpg)
+
+### background-attachment
+
+- `background-attachment: scroll;`
+- `background-attachment: fixed;`
+
+### All Backgrounds Shortcut
 
 ```css
-.parent {
-	height: 100px;
-	width: 200px;
-	border: 10px solid green;
-	overflow: scroll;
+shortcut {
+	background: color image repeat attachment position;
 }
 ```
+
+- `background:red url("./source/lion.jpg") no-repeat scroll center center;`
+
+### background-size
+
+`background-size:cover;`
 
 </details>
 
@@ -785,6 +723,39 @@ We can create columns.
 
 ```html
 .selector1 { display:block; } .selector2 { display:inline; }
+```
+
+</details>
+
+---
+
+<details>
+<summary>Handling Overflow</summary>
+
+## Handling Overflow
+
+content overflow can be handled using the CSS overflow property.  
+**overflow** : child element is not overflowed on parent element.
+
+1. visible (default)=> CSS tries to avoid data loss. Hence, the `overflow:visible;` is the default value for it.
+   - `overflow:visible;`
+2. hidden => The overflow is clipped, and the rest of the content will be invisible.
+   - `overflow: hidden;`
+3. scroll => The overflow is clipped, and a scrollbar is added to see the rest of the content.
+   - `overflow: scroll;`
+   - `overflow-x: scroll;`
+   - `overflow-y: scroll;`
+4. auto => It is similar to scroll, but it adds scrollbars only when necessary.
+
+- `overflow: auto;`
+
+```css
+.parent {
+	height: 100px;
+	width: 200px;
+	border: 10px solid green;
+	overflow: scroll;
+}
 ```
 
 </details>
@@ -974,13 +945,26 @@ z-index => layers position
 
 ## CSS Units
 
-- pixel : pixels are fixed size
-  - `width:100px;`
+1. pixel
+2. viewport
+3. percentage
+
+### 1 pixel
+
+- pixels are fixed size
+- `width:100px;`
+
+### 2 viewport
+
 - viewport : view port is depended on device screen size
-  - `width:100vw;`
-  - `width:100vh;`
+- **viewport** is the visible area of a web page that a user can see within their web browser window without scrolling.
+- `width:100vw;`
+- `width:100vh;`
+
+### 3 percentage
+
 - percentage : percentage is depended on parent container
-  - `width:100%;`
+- `width:100%;`
 
 </details>
 

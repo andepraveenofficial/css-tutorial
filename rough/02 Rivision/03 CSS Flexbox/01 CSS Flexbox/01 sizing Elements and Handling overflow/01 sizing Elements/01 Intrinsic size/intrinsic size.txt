@@ -1,0 +1,4 @@
+Intrinsic size
+==============
+some elements have a natural size set by default, we call it Intrinsic size.
+-----------------

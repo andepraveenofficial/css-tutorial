@@ -1,0 +1,13 @@
+Justify content:
+================
+The justify-content property specifies the alignment of flex items along the main axis.
+----------------
+justify content property can have the following values:
+------------
+flex-start (default)=> All the elements will arrange to the start of the container.
+center => All the elements will arrange to the center of the container.
+flex-end => All the elements will arrage to the end of the container.
+space-between => Left over space will be arrange in between the flex items.
+space-around => Every flex item will get space around them.
+===================
+

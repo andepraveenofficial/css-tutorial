@@ -1,0 +1,7 @@
+Box sizing
+===========
+Every HTML element on a web page is rectangular box.
+By default in the CSS box model, the width and height you set to an element are applied only to the element's content.
+-----------------------
+
+

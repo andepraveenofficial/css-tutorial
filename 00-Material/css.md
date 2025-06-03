@@ -9,16 +9,18 @@
 
 - Introduction
 - Selectors
+- CSS Units
+- CSS Learning Strategy
 - Makeup
 - Box Model
 - Layout
 - Handling Overflow
-- Media Queries
+- Responsiveness
 - Positions
-- CSS Units
 - CSS Custom Property
 - CSS Animation
 - Documentation
+- Rough
 
 </details>
 
@@ -46,6 +48,13 @@ selector {
 }
 ```
 
+```css
+.heading {
+	color: green;
+	background-color: orange;
+}
+```
+
 ### apply CSS
 
 We can apply **CSS** in 3 ways,
@@ -69,7 +78,7 @@ We can apply **CSS** in 3 ways,
 ### 2. Internal
 
 - we can use `style` element to write `css code` for a particular HTML document.  
-  Generally, we use `style` element in head part.
+- Generally, we use `style` element in head part.
 
 ```html index.html
 <!DOCTYPE html>
@@ -91,7 +100,7 @@ We can apply **CSS** in 3 ways,
 ### 3. External
 
 - we can create External CSS Style Sheet with `.css` file extension.
-- By using the HTML <link> element to link the external CSS file to the HTML document in the `<head>` section.
+- By using the HTML `<link>` element to link the external CSS file to the HTML document in the `<head>` section.
 
 ```html index.html
 <!DOCTYPE html>
@@ -113,7 +122,7 @@ We can apply **CSS** in 3 ways,
 ```
 
 - The HTML **rel** attribute stands for a relationship of the linked document to the current document. In this case, it is a stylesheet.
-- The HTML **href** attribute stands for Hyper Reference to the URL/path of the CSS file.
+- The HTML **href** attribute stands for **Hyper Reference** to the URL/path of the CSS file.
 
 ### Fundamental Concepts
 
@@ -152,8 +161,9 @@ Browser gives priority to select the CSS property.
 
 ```css
     .container {
-        background-color: green;
-        box-shadow: 0 0 10px black;
+    background-color: green;
+    box-shadow: 0 0 10px black;
+ }
 
     .container {
         / *These are applicable */
@@ -173,11 +183,11 @@ Browser gives priority to select the CSS property.
 
 - The CSS Selectors are used to select the HTML elements that we want to apply style.
 
-1. Tag selector = same kind of tags selection
-2. Class selector = group of elements selection
-3. Id selector = only one particular element selection
+1. Tag selector -> same kind of tags selection
+2. Class selector -> group of elements selection
+3. Id selector -> only one particular element selection
 4. Attribute selector
-5. Pseudo selector
+5. Pseudo selector -> user interactions
 6. Mixed / Child selector
 7. Group selection
 8. Universal Selector
@@ -262,9 +272,9 @@ input[type="password"] {
 ```
 
 ### Pseudo selector
-
-Pseudo selector is a dynamic selector.  
-Apply css dynamically.
+- styles applied when user interact with html element.
+- Pseudo selector is a dynamic selector.
+- Apply css dynamically.
 
 `selector:event`
 
@@ -293,7 +303,7 @@ Apply css dynamically.
 ```
 
 ```css
-.parent #child {
+.parent > #child {
 	padding: 10px;
 	color: orange;
 	background-color: green;
@@ -329,7 +339,7 @@ Apply css dynamically.
 
 ### Universal Selector
 
-The universal selector selects all the HTML elements in an HTML document.
+- The universal selector selects all the HTML elements in an HTML document.
 
 ```html
 <div>1</div>
@@ -348,6 +358,64 @@ The universal selector selects all the HTML elements in an HTML document.
 ---
 
 <details>
+<summary>CSS Units</summary>
+
+## CSS Units
+
+1. pixel
+2. viewport
+3. percentage
+
+### 1 pixel
+
+- pixels are fixed size
+
+```css
+.heading{
+  width:200px;
+  height:100px;
+}
+```
+
+### 2 viewport
+
+- viewport : view port is depended on device screen size
+- **viewport** is the visible area of a web page that a user can see within their web browser window without scrolling.
+
+```css
+.heading{
+  width:100vw;
+  height:50vh;
+}
+```
+
+### 3 percentage
+
+- percentage : percentage is depended on parent container
+
+```css
+.heading{
+  width:100%;
+}
+```
+
+</details>
+
+---
+
+<details>
+<summary>CSS Learning Strategy</summary>
+
+## CSS Learning Strategy
+1. Makeup
+2. Box Model
+3. Layout
+
+</details>
+
+---
+
+<details>
 <summary>Makeup</summary>
 
 ## Makeup
@@ -359,31 +427,54 @@ The universal selector selects all the HTML elements in an HTML document.
 ### 1. Text Properties
 
 1. color
-2. font-style
-3. text-align
-4.
+2. text styles
+3. text alignment
 
 #### color
 
-- `color:"orange";`
-- `color:#ffffff`
+```css
+.heading{
+  color:green;
+}
+
+.paragraph{
+  color: #000000;
+}
+```
 
 #### font styles
+1. `font-size: 28px;`
+2. `font-weight:bold;`
+3. `font-style:italic;`
+4. `font-family:"Roboto";`
+5. `text-decoration: underline;`
+6. `text-transform: uppercase;`
 
-- `font-family:"Roboto";`
-- `font-size: 28px;`
-- `font-style:italic;`
-- `font-weight:bold;`
-- `text-decoration: underline;`
-- `text-transform: uppercase;`
 
-#### Alignment
+```css
+.heading{
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+  text-transform:uppercase;
+}
+```
+
+#### text alignment
 
 `text-align` property specifies the horizontal alignment of the text in an HTML element.
 
 - `text-align:left;`
 - `text-align:center;`
 - `text-align:right;`
+
+```css
+.heading{
+  text-align: right;
+}
+```
 
 </details>
 
@@ -392,32 +483,34 @@ The universal selector selects all the HTML elements in an HTML document.
 <details>
 <summary>Box Model</summary>
 
-## Box Model
 
-## Box Properties
 
-1. width & height
-2. padding
-3. border
-4. margin
-5. outline
+### Box Model
+- **Content** -> The content of the box, where text and images appear.
+1. **Width & Height** -> The content width and height.
+2. **Padding** -> The space between the content and the border.
+3. **Border** -> A borderline that goes around the padding.
+4. **Outline** -> An outline that goes around the border.
+5. **Margin** -> The space outside the border.
 
-![Box Properties](./assets/02-box-properties.jpg)
+```css
+.heading{
+  width:200px;
+  height:100px;
+  padding: 20px;
+  border:solid black 40px;
+  outline:solid green 10px;
+  margin:60px;
+}
+```
 
-### CSS Box Model
-
-- **Content** - The content of the box, where text and images appear.
-- **Padding** - The space between the content and the border.
-- **Border** - A borderline that goes around the padding and content.
-- **Margin** - The space outside the border.
-- **Outline** - An outline that goes around the border.
+![Box Properties](./assets/02-box-model.png)
 
 ### Intrinsic vs Extrinsic
+- Some elements have a natural size based on their content. This is called intrinsic size.
+- If we set a size using CSS, like width or height, it’s called extrinsic size.
 
-- some elements have a natural size set by default, we call it Intrinsic size.
-- If we set a specific size to an element, we call an Extrinsic size.
-
-### width & height
+### 1. width & height
 
 It gives HTML element width & height
 
@@ -428,7 +521,18 @@ It gives HTML element width & height
 - `min-height:100px;`
 - `max-height:400px;`
 
-### border
+
+### 2. padding
+
+The space between border and content.
+
+- `padding:10px;` => TRBL
+- `padding-top:10px;`
+- `padding-right:10px;`
+- `padding-bottom:10px;`
+- `padding-left:10px;`
+- 
+### 3. border
 
 - `border-style: dashed;`
 - `border-width: 5px;`
@@ -445,28 +549,7 @@ It gives HTML element width & height
   - bottom
   - left
 
-### padding
-
-The space between border and content.
-
-- `padding:10px;` => TRBL
-- `padding-top:10px;`
-- `padding-right:10px;`
-- `padding-bottom:10px;`
-- `padding-left:10px;`
-
-### margin
-
-The space between border and outline
-
-- `margin:auto;` It adjust automatically center of horizontal.
-- `margin:50px;`(TRBL)
-- `margin-top: 50px;`
-- `margin-right:50px;`
-- `margin-bottom: 50px;`
-- `margin-left: 50px;`
-
-### outline
+### 4. outline
 
 An outline that goes around the border.
 
@@ -482,17 +565,27 @@ An outline that goes around the border.
   - right
   - bottom
   - left
+  
+### 5. margin
+
+The space between border and outline
+
+- `margin:auto;` It adjust automatically center of horizontal.
+- `margin:50px;`(TRBL)
+- `margin-top: 50px;`
+- `margin-right:50px;`
+- `margin-bottom: 50px;`
+- `margin-left: 50px;`
 
 ### Box-sizing property
 
-The box-sizing CSS property sets how the total width and height of an element are calculated.
-
-Box-Sizing property has the following values:
+- The box-sizing CSS property sets how the total width and height of an element are calculated.
+- Box-Sizing property has the following values:
 
 1. content-box (default)
 2. border-box
 
-- **content-box**(Default) :
+#### 1. **content-box**(Default) :
 
 ```css
 .container {
@@ -511,7 +604,7 @@ Box-Sizing property has the following values:
 }
 ```
 
-- **border-box**:
+#### 2. **border-box**:
   Fixed width and height. It is adjustment to given width and height.
 
 ```css
@@ -536,57 +629,6 @@ Box-Sizing property has the following values:
 - `box-shadow:x y blur color;`
 - `box-shadow:0 0 10px black;`
 
-## Background Properties
-
-1. background-color
-2. background-image
-3. background-repeat
-4. background-position
-5. background-attachment
-6. background-size
-
-### background-color
-
-- `background-color: "orange";`
-- `background-color: transparent;`
-
-### background-image
-
-- `background-image: url("source/bg-image.jpg");`
-- `background-image:linear-gradient(45deg,black,red,green);`
-- `background-image:linear-gradient(to left,black,red,green);`
-- `background-image:radial-gradient(black,red,green);`
-
-### background-repeat
-
-- `background-repeat:repeat;`
-- `background-repeat:no-repeat;`
-- `background-repeat:repeat-x;`
-- `background-repeat:repeat-y;`
-
-### background-position
-
-`background-position: top left;`
-![Background Position](./assets/01-background-position.jpg)
-
-### background-attachment
-
-- `background-attachment: scroll;`
-- `background-attachment: fixed;`
-
-### All Backgrounds Shortcut
-
-```css
-shortcut {
-	background: color image repeat attachment position;
-}
-```
-
-- `background:red url("./source/lion.jpg") no-repeat scroll center center;`
-
-### background-size
-
-`background-size:cover;`
 
 </details>
 
@@ -595,10 +637,10 @@ shortcut {
 <details>
 <summary>Layout</summary>
 
-### Layout
+## Layout
 
-A Layout is a pattern to structure the information and arrange the elements on the website.  
-A responsive website will automatically adjust for different screen sizes and viewports.
+- A Layout is a pattern to structure the information and arrange the elements on the website.  
+- A responsive website will automatically adjust for different screen sizes and viewports.
 
 **Methods to Design a Layout**:  
 Mainly, there are two methods that help design the webpage layout.
@@ -606,9 +648,9 @@ Mainly, there are two methods that help design the webpage layout.
 1. Flexbox(stable)
 2. CSS Grid
 
-#### Flexbox
+### Flexbox
 
-Flexbox is a layout method that helps to arrange the HTML elements in rows(horizontally) or columns(vertically).
+- Flexbox is a layout method that helps to arrange the HTML elements in rows(horizontally) or columns(vertically).
 
 Flexbox Layout with CSS Properties:
 
@@ -704,8 +746,8 @@ If the value of align-self is auto, then the align-items value of its Flex conta
 
 #### Grid
 
-This is used to create the Layout.
-We can create columns.
+- This is used to create the Layout.
+- We can create columns.
 
 ```css
 .grid-container {
@@ -763,7 +805,7 @@ content overflow can be handled using the CSS overflow property.
 ---
 
 <details>
-<summary>Media Queries</summary>
+<summary>Responsiveness</summary>
 
 ## Media Query
 
@@ -941,36 +983,6 @@ z-index => layers position
 ---
 
 <details>
-<summary>CSS Units</summary>
-
-## CSS Units
-
-1. pixel
-2. viewport
-3. percentage
-
-### 1 pixel
-
-- pixels are fixed size
-- `width:100px;`
-
-### 2 viewport
-
-- viewport : view port is depended on device screen size
-- **viewport** is the visible area of a web page that a user can see within their web browser window without scrolling.
-- `width:100vw;`
-- `width:100vh;`
-
-### 3 percentage
-
-- percentage : percentage is depended on parent container
-- `width:100%;`
-
-</details>
-
----
-
-<details>
 <summary>CSS Custom Property</summary>
 
 ## CSS Custom Property
@@ -1064,3 +1076,62 @@ step2 => apply animation rules
 </details>
 
 ---
+
+<details>
+<summary>Rough</summary>
+
+## Rough
+
+## Background Properties
+
+1. background-color
+2. background-image
+3. background-repeat
+4. background-position
+5. background-attachment
+6. background-size
+
+### background-color
+
+- `background-color: "orange";`
+- `background-color: transparent;`
+
+### background-image
+
+- `background-image: url("source/bg-image.jpg");`
+- `background-image:linear-gradient(45deg,black,red,green);`
+- `background-image:linear-gradient(to left,black,red,green);`
+- `background-image:radial-gradient(black,red,green);`
+
+### background-repeat
+
+- `background-repeat:repeat;`
+- `background-repeat:no-repeat;`
+- `background-repeat:repeat-x;`
+- `background-repeat:repeat-y;`
+
+### background-position
+
+`background-position: top left;`
+![Background Position](./assets/01-background-position.jpg)
+
+### background-attachment
+
+- `background-attachment: scroll;`
+- `background-attachment: fixed;`
+
+### All Backgrounds Shortcut
+
+```css
+shortcut {
+	background: color image repeat attachment position;
+}
+```
+
+- `background:red url("./source/lion.jpg") no-repeat scroll center center;`
+
+### background-size
+
+`background-size:cover;`
+
+</details>

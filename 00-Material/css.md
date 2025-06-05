@@ -652,12 +652,12 @@ Fixed width and height. It is adjustment to given width and height.
 - `background-repeat:repeat;`
 - `background-repeat:no-repeat;`
 - `background-repeat:repeat-x;`
-- `background-repeat:repeat-y;`
+- `background-repeat:repeat-y;` 
 
 ### background-position
 
 `background-position: top left;`
-![Background Position](./assets/01-background-position.jpg)
+![Background Position](./assets/05-background-position.jpg)
 
 ### background-attachment
 
@@ -977,7 +977,7 @@ Using ,(comma) operator we can combine multiple Media Queries.
 
 ## Positions
 
-- The position property in CSS is used to control the positioning of an element within its containing element.
+- The position property in CSS determines how an element is placed in the document flow. It defines how the top, right, bottom, and left properties affect the element.
 
 ### position properties
 
@@ -998,6 +998,33 @@ Using ,(comma) operator we can combine multiple Media Queries.
 ### supporting properties:
 
 `top,right,bottom,left`
+
+### 1. static (default)
+- This is the default position of any HTML element.
+- Elements are positioned according to the normal document flow (top to bottom).
+- The properties top, right, bottom, and left do not apply.
+
+### 2. relative
+- The element is positioned relative to its normal position.
+- It still occupies space in the layout as if it were static.
+- You can move it visually using top, right, bottom, and left.
+
+### 3. absolute
+- The element is removed from the normal flow.
+- Positioned relative to the nearest ancestor with position: relative, absolute, or fixed.
+- If no such ancestor exists, it's positioned relative to the `<html>` element (viewport).
+- You can use top, right, bottom, and left to place it.
+
+### 4. fixed
+- The element is removed from the normal flow.
+- Positioned relative to the viewport, not any ancestor.
+- It stays in the same position even when the page is scrolled.
+- Useful for sticky headers, floating buttons, etc.
+
+### 5. sticky
+- A hybrid of relative and fixed.
+- The element behaves like relative until a scroll threshold is crossed, then it behaves like fixed.
+- The element sticks at a position defined by top, right, etc. when scrolling.
 
 ### z-index
 

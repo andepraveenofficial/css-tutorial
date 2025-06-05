@@ -77,8 +77,8 @@ We can apply **CSS** in 3 ways,
 
 ### 2. Internal
 
-- we can use `style` element to write `css code` for a particular HTML document.  
-- Generally, we use `style` element in head part.
+- we can use `style` element to write `css code` for a particular HTML document.
+- Generally, we use `<style>` element in head part.
 
 ```html index.html
 <!DOCTYPE html>
@@ -165,11 +165,11 @@ Browser gives priority to select the CSS property.
     box-shadow: 0 0 10px black;
  }
 
-    .container {
-        / *These are applicable */
-        background-color: red;
-        box-shadow: 0 0 10px black;
-    }
+  .container {
+      / *These are applicable */
+      background-color: red;
+      box-shadow: 0 0 10px black;
+  }
 ```
 
 </details>
@@ -216,7 +216,7 @@ selector priority from High to Low :
 ```css
 p {
 	color: red;
-	background-color: yellow;
+	background-color: green;
 }
 ```
 
@@ -231,25 +231,25 @@ p {
 ```css
 #myParagraph {
 	color: red;
-	background-color: yellow;
+	background-color: green;
 }
 ```
 
 ### class Selector
 
-We can provide multiple class names separated by space as a value to the HTML class attribute.
-`<tag class="name1 name2 name3 name4 ...">Content</tag>`
+- We can provide multiple class names separated by space as a value to the HTML class attribute.
+- `<tag class="name1 name2 name3 name4 ...">Content</tag>`
 
 ```html
 <p id="myParagraph">I am ID Selector</p>
-<p class="my-paragraph">I am Tag Selector</p>
-<p class="my-paragraph">I am Tag Selector</p>
+<p class="my-paragraph">I am Class Selector</p>
+<p class="my-paragraph">I am Class Selector</p>
 ```
 
 ```css
 .my-paragraph {
 	color: red;
-	background-color: yellow;
+	background-color: green;
 }
 ```
 
@@ -272,6 +272,7 @@ input[type="password"] {
 ```
 
 ### Pseudo selector
+
 - styles applied when user interact with html element.
 - Pseudo selector is a dynamic selector.
 - Apply css dynamically.
@@ -293,22 +294,13 @@ input[type="password"] {
 }
 ```
 
-### Mixed Selector
+### Mixed Selector / Child Selector
 
 ```html
 <div class="parent">
 	<h1 id="#child">I am First Child</h1>
 	<h1>I am Second Child</h1>
 </div>
-```
-
-```css
-.parent > #child {
-	padding: 10px;
-	color: orange;
-	background-color: green;
-	border-radius: 10px;
-}
 ```
 
 ```css
@@ -353,6 +345,8 @@ input[type="password"] {
 }
 ```
 
+![Universal Selector](./assets/04-universal-selector.png)
+
 </details>
 
 ---
@@ -371,9 +365,9 @@ input[type="password"] {
 - pixels are fixed size
 
 ```css
-.heading{
-  width:200px;
-  height:100px;
+.heading {
+	width: 200px;
+	height: 100px;
 }
 ```
 
@@ -383,9 +377,9 @@ input[type="password"] {
 - **viewport** is the visible area of a web page that a user can see within their web browser window without scrolling.
 
 ```css
-.heading{
-  width:100vw;
-  height:50vh;
+.heading {
+	width: 100vw;
+	height: 50vh;
 }
 ```
 
@@ -394,8 +388,8 @@ input[type="password"] {
 - percentage : percentage is depended on parent container
 
 ```css
-.heading{
-  width:100%;
+.heading {
+	width: 100%;
 }
 ```
 
@@ -407,6 +401,7 @@ input[type="password"] {
 <summary>CSS Learning Strategy</summary>
 
 ## CSS Learning Strategy
+
 1. Makeup
 2. Box Model
 3. Layout
@@ -420,45 +415,45 @@ input[type="password"] {
 
 ## Makeup
 
-- we are adding some css properties to particular elements.
+- we are adding some css properties to particular element.
 
 1. Text Properties
 
 ### 1. Text Properties
 
 1. color
-2. text styles
+2. font styles
 3. text alignment
 
 #### color
 
 ```css
-.heading{
-  color:green;
+.heading {
+	color: green;
 }
 
-.paragraph{
-  color: #000000;
+.paragraph {
+	color: #000000;
 }
 ```
 
 #### font styles
+
 1. `font-size: 28px;`
 2. `font-weight:bold;`
 3. `font-style:italic;`
-4. `font-family:"Roboto";`
+4. `font-family: Arial, sans-serif;`
 5. `text-decoration: underline;`
 6. `text-transform: uppercase;`
 
-
 ```css
-.heading{
-  font-size: 28px;
-  font-weight: bold;
-  font-style: italic;
-  font-family: Arial, sans-serif;
-  text-decoration: underline;
-  text-transform:uppercase;
+.heading {
+	font-size: 28px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Arial, sans-serif;
+	text-decoration: underline;
+	text-transform: uppercase;
 }
 ```
 
@@ -471,8 +466,8 @@ input[type="password"] {
 - `text-align:right;`
 
 ```css
-.heading{
-  text-align: right;
+.heading {
+	text-align: right;
 }
 ```
 
@@ -483,10 +478,10 @@ input[type="password"] {
 <details>
 <summary>Box Model</summary>
 
-
-
 ### Box Model
-- **Content** -> The content of the box, where text and images appear.
+
+- **Content** -> The content of the box, where text or image appear.
+
 1. **Width & Height** -> The content width and height.
 2. **Padding** -> The space between the content and the border.
 3. **Border** -> A borderline that goes around the padding.
@@ -494,19 +489,20 @@ input[type="password"] {
 5. **Margin** -> The space outside the border.
 
 ```css
-.heading{
-  width:200px;
-  height:100px;
-  padding: 20px;
-  border:solid black 40px;
-  outline:solid green 10px;
-  margin:60px;
+.heading {
+	width: 200px;
+	height: 100px;
+	padding: 20px;
+	border: solid black 40px;
+	outline: solid green 10px;
+	margin: 60px;
 }
 ```
 
 ![Box Properties](./assets/02-box-model.png)
 
 ### Intrinsic vs Extrinsic
+
 - Some elements have a natural size based on their content. This is called intrinsic size.
 - If we set a size using CSS, like width or height, it’s called extrinsic size.
 
@@ -516,11 +512,10 @@ It gives HTML element width & height
 
 - `width:100px;`
 - `height:100px;`
-- `min-width:100px;`
+- `min-width:50px;`
 - `max-width:400px;`
-- `min-height:100px;`
-- `max-height:400px;`
-
+- `min-height:80px;`
+- `max-height:200px;`
 
 ### 2. padding
 
@@ -531,9 +526,10 @@ The space between border and content.
 - `padding-right:10px;`
 - `padding-bottom:10px;`
 - `padding-left:10px;`
-- 
-### 3. border
+-
 
+### 3. border
+A borderline that goes around the padding.
 - `border-style: dashed;`
 - `border-width: 5px;`
 - `border-color: orange;`
@@ -565,10 +561,9 @@ An outline that goes around the border.
   - right
   - bottom
   - left
-  
-### 5. margin
 
-The space between border and outline
+### 5. margin
+The space outside the border.
 
 - `margin:auto;` It adjust automatically center of horizontal.
 - `margin:50px;`(TRBL)
@@ -605,7 +600,8 @@ The space between border and outline
 ```
 
 #### 2. **border-box**:
-  Fixed width and height. It is adjustment to given width and height.
+
+Fixed width and height. It is adjustment to given width and height.
 
 ```css
 .container {
@@ -630,6 +626,59 @@ The space between border and outline
 - `box-shadow:0 0 10px black;`
 
 
+## Background Properties
+
+1. background-color
+2. background-image
+3. background-repeat
+4. background-position
+5. background-attachment
+6. background-size
+
+### background-color
+
+- `background-color: "orange";`
+- `background-color: transparent;`
+
+### background-image
+
+- `background-image: url("source/bg-image.jpg");`
+- `background-image:linear-gradient(45deg,black,red,green);`
+- `background-image:linear-gradient(to left,black,red,green);`
+- `background-image:radial-gradient(black,red,green);`
+
+### background-repeat
+
+- `background-repeat:repeat;`
+- `background-repeat:no-repeat;`
+- `background-repeat:repeat-x;`
+- `background-repeat:repeat-y;`
+
+### background-position
+
+`background-position: top left;`
+![Background Position](./assets/01-background-position.jpg)
+
+### background-attachment
+
+- `background-attachment: scroll;`
+- `background-attachment: fixed;`
+
+### All Backgrounds Shortcut
+
+```css
+shortcut {
+	background: color image repeat attachment position;
+}
+```
+
+- `background:red url("./source/lion.jpg") no-repeat scroll center center;`
+
+### background-size
+
+`background-size:cover;`
+
+
 </details>
 
 ---
@@ -639,48 +688,45 @@ The space between border and outline
 
 ## Layout
 
-- A Layout is a pattern to structure the information and arrange the elements on the website.  
-- A responsive website will automatically adjust for different screen sizes and viewports.
+- A Layout is used to arrange the elements on the website.
 
-**Methods to Design a Layout**:  
-Mainly, there are two methods that help design the webpage layout.
+### Methods to Design a Layout 
+ 
+- Mainly, there are two methods that help design the webpage layout.
 
-1. Flexbox(stable)
+1. Flexbox
 2. CSS Grid
 
 ### Flexbox
 
 - Flexbox is a layout method that helps to arrange the HTML elements in rows(horizontally) or columns(vertically).
 
-Flexbox Layout with CSS Properties:
+Flexbox Layout CSS Properties:
 
-- `display`
-  - define the flexbox
+1. `display` -> define the flexbox (layout method)
     - flex
     - inline-flex
     - grid
     - none
-- `flex-direction`
-  - The Flex Direction specifies the direction of the flex items in the Flexbox Container.
+2 `flex-direction` -> The Flex Direction specifies the direction of the flex items in the Flexbox Container.
     - row
     - column
 - `justify-content`
   - The justify-content property specifies the alignment of flex items along the main axis.
   - justify content property can have the following values:
-    - flex-start (default)=> All the elements will arrange to the start of the container.
-    - center => All the elements will arrange to the center of the container.
-    - flex-end => All the elements will arrange to the end of the container.
-    - space-between => Left over space will be arranged in between the flex items.
-    - space-around => Every flex item will get space around them.
+    - `flex-start` (default)=> All the elements will arrange to the start of the container.
+    - `center` => All the elements will arrange to the center of the container.
+    - `flex-end` => All the elements will arrange to the end of the container.
+    - `space-between` => The extra space is added only between the items. The first item stays at the start, and the last item stays at the end. The space is shared between the middle items.
+    - `space-around` => Every flex item will get equal space around them.
 - `align-items`
   - The align-items property specifies the alignment of flex items along the cross-axis.
   - Align items property can have the following values:
-    - stretch (default)=> will stretch its available height.
-    - flex-start => will be at the starting of the flex container.
-    - center => will be at the center of the available height.
-    - flex-end => will be at the ending point of the available height.
+    - `stretch` (default)=> will stretch its available height.
+    - `flex-start` => will be at the starting of the flex container.
+    - `center` => will be at the center of the available height.
+    - `flex-end` => will be at the ending point of the available height.
 - `flex-wrap`
-
   - The flex-wrap property arranges the flex items in multiple lines.
   - Flex wrap property can have the following values:
     - nowrap(default)
@@ -690,15 +736,15 @@ Flexbox Layout with CSS Properties:
 - `align-self`
   - The align-self property specifies the alignment of individual flex items along the cross axis.
   - Align self property can have followed values:
-    - flex-start
-    - center
-    - flex-end
-    - stretch
-    - auto(default)
+    - `flex-start`
+    - `center`
+    - `flex-end`
+    - `stretch`
+    - `auto`(default)
 
 If the value of align-self is auto, then the align-items value of its Flex container gets inherited.
 
-- order
+- `order`
   - The order property specifies the order of flex items in the Flex container.
   - order property has the following values:
     - 0 (default)
@@ -744,26 +790,13 @@ If the value of align-self is auto, then the align-items value of its Flex conta
 </html>
 ```
 
-#### Grid
-
-- This is used to create the Layout.
-- We can create columns.
-
-```css
-.grid-container {
-	display: grid;
-}
-```
-
 ### Block vs Inline
 
-- The block-level element always starts on a new line.
-  It occupies entire horizontal space of its Parent.
+- The block-level element always starts on a new line. It occupies entire horizontal space of its Parent.
 
-- The inline element does not start on a new line.
-  It occupies only its content width.
+- The inline element does not start on a new line. It occupies only its content width.
 
-```html
+```css
 .selector1 { display:block; } .selector2 { display:inline; }
 ```
 
@@ -776,8 +809,8 @@ If the value of align-self is auto, then the align-items value of its Flex conta
 
 ## Handling Overflow
 
-content overflow can be handled using the CSS overflow property.  
-**overflow** : child element is not overflowed on parent element.
+- content overflow can be handled using the CSS overflow property.  
+- **overflow** : child element data overflowed on parent element.
 
 1. visible (default)=> CSS tries to avoid data loss. Hence, the `overflow:visible;` is the default value for it.
    - `overflow:visible;`
@@ -791,7 +824,7 @@ content overflow can be handled using the CSS overflow property.
 
 - `overflow: auto;`
 
-```css
+```css parent.css
 .parent {
 	height: 100px;
 	width: 200px;
@@ -807,12 +840,15 @@ content overflow can be handled using the CSS overflow property.
 <details>
 <summary>Responsiveness</summary>
 
+## Responsiveness
+- A responsive website will automatically adjust for different screen sizes and viewports.
+
 ## Media Query
 
-Media queries play a crucial part while developing Responsive Layouts.  
-Responsiveness is a perfectly fit for all the different screen sizes.  
-We can create a responsive website using media queries or flexbox without Bootstrap.  
-Using Media queries, we can conditionally apply styles based on the device type (e.g. printers, TVs, etc.) and media features (e.g. viewport width, etc.).
+- Media queries play a crucial part while developing Responsive Layouts.
+- Responsiveness is a perfectly fit for all the different screen sizes.
+- We can create a responsive website using media queries or flexbox.  
+- Using Media queries, we can conditionally apply styles based on the device type (e.g. printers, TVs, etc.) and media features (e.g. viewport width, etc.).
 
 ### syntax:
 
@@ -858,8 +894,8 @@ possible types of media are:
 
 #### and
 
-using `and` operator can combine multiple Media Features.  
-syntax:
+- using `and` operator can combine multiple Media Features.
+- syntax:
 
 ```css
 @media (media-feature-expression) and (media-feature-expression) {
@@ -867,7 +903,7 @@ syntax:
 }
 ```
 
-we can also join media feature with a media type.
+- we can also join media feature with a media type.
 syntax:
 
 ```css
@@ -878,8 +914,8 @@ syntax:
 
 #### not
 
-The `not` operator is a Media Query Modifier. It negates the entire Media Query result.
-If you use the not operator, you must also specify a media type.
+- The `not` operator is a Media Query Modifier. It negates the entire Media Query result.
+- If you use the `not` operator, you must also specify a media type.
 
 syntax:
 
@@ -903,10 +939,10 @@ Using ,(comma) operator we can combine multiple Media Queries.
 
 #### Orientation
 
-The two most common types of orientation are:
+- The two most common types of orientation are:
 
-landscape => The width of the device is greater than the height.
-portrait => The height of the device is greater than the width.
+1. landscape => The width of the device is greater than the height.
+2. portrait => The width of the device is smaller than the height..
 
 ```css
 @media (orientation: landscape) {
@@ -941,7 +977,7 @@ portrait => The height of the device is greater than the width.
 
 ## Positions
 
-The position property in CSS is used to control the positioning of an element within its containing element.
+- The position property in CSS is used to control the positioning of an element within its containing element.
 
 ### position properties
 
@@ -954,7 +990,7 @@ The position property in CSS is used to control the positioning of an element wi
 ![Positions](./assets/03-positions.png)
 
 - **static** => default position of any html element.
-- **relative** => It is used to set the element relative to its normal position.
+- **relative** => It is used to set the element position relative to its normal position.
 - **absolute** => this is positioned relative to its parent.
 - **fixed** => this is to fix an element in the given position (calculated from view port).
 - **sticky** => this is to stick an element in the given position.
@@ -1000,7 +1036,7 @@ A CSS custom property is a variable in CSS.
 }
 ```
 
-If the custom property has to be accessed through the entire HTML document, declare it inside the :root pseudo-class.
+- If the custom property has to be accessed through the entire HTML document, declare it inside the **:root** pseudo-class.
 
 ```css
 :root {
@@ -1076,62 +1112,3 @@ step2 => apply animation rules
 </details>
 
 ---
-
-<details>
-<summary>Rough</summary>
-
-## Rough
-
-## Background Properties
-
-1. background-color
-2. background-image
-3. background-repeat
-4. background-position
-5. background-attachment
-6. background-size
-
-### background-color
-
-- `background-color: "orange";`
-- `background-color: transparent;`
-
-### background-image
-
-- `background-image: url("source/bg-image.jpg");`
-- `background-image:linear-gradient(45deg,black,red,green);`
-- `background-image:linear-gradient(to left,black,red,green);`
-- `background-image:radial-gradient(black,red,green);`
-
-### background-repeat
-
-- `background-repeat:repeat;`
-- `background-repeat:no-repeat;`
-- `background-repeat:repeat-x;`
-- `background-repeat:repeat-y;`
-
-### background-position
-
-`background-position: top left;`
-![Background Position](./assets/01-background-position.jpg)
-
-### background-attachment
-
-- `background-attachment: scroll;`
-- `background-attachment: fixed;`
-
-### All Backgrounds Shortcut
-
-```css
-shortcut {
-	background: color image repeat attachment position;
-}
-```
-
-- `background:red url("./source/lion.jpg") no-repeat scroll center center;`
-
-### background-size
-
-`background-size:cover;`
-
-</details>

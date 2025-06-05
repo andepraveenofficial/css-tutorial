@@ -1,0 +1,17 @@
+animation
+========================
+1)animation-name:anyName;
+2)animation-duration:3s;
+3)animation-iteration-count:1 / infinite; => reputation
+4)animation-timing-function:linear / ease-in / ease-out;
+5)animation-delay:3s;
+----------------------------------------------
+shortcut{
+animation:name duration iteration-count timing-function delay;
+}
+==============================================================
+procedure:
+------------------
+step1 => define your element
+step2 => apply animation rules
+========================================

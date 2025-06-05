@@ -1,0 +1,14 @@
+Flex wrap:
+===========
+The flex-wrap property arranges the flex items in multiple lines.
+------------
+Flex wrap property can have the following values.
+---------
+nowrap(default)
+wrap
+wrap-reverse
+...etc
+==============
+
+
+

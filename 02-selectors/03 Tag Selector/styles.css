@@ -1,0 +1,14 @@
+#headingElement{
+    color:blue;
+    background-color: pink;
+}
+
+.heading-element{
+    color:green;
+    background-color: orange;
+}
+
+p{
+    color:red;
+    background-color: yellow;
+}

@@ -1,0 +1,4 @@
+.parent{
+    color:blue;  /*  Inherited Property */
+    border:2px black solid;  /*  Non-Inherited Property */
+}

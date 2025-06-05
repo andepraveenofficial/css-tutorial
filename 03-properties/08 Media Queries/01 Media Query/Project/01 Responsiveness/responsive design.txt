@@ -1,0 +1,15 @@
+Resposive design
+=================
+perfectly fit for all the different screen sizes.
+-------------------------------------------------
+-> view port : html : automtically adjust
+-> Media Queries : css :
+-> use Fluid dimensions instead of fixed
+-> Mobile first Approach
+-------------------------------------------------
+we can create css sepeately for devices:
+->mobile.css
+->tablet.css
+->laptop.css
+->wide.css
+----------------------------------------------

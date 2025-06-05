@@ -1,0 +1,18 @@
+css backgrounds
+====================
+properties
+-----------------
+1) background-color:red / transparent;
+2) background-image:url(" ") / linear-gradient(45deg,black,red,green) / radial-gradient(black,red,green);
+3) background-repeat:repeat / repeat-xy /  no-repeat / repeat-x / repeat-y ;
+4) background-attachment:scroll / fixed;
+5) background-position:top left / top center / top right / center left / center center / center right / bottom left / bottom center / bottom right;
+-----------------------------------------------------------------------
+6) shortcut{
+background:color image repeat attachment position;
+}
+
+//give a space for property..
+------------------------------------------------------------------------
+7)background-size:cover;
+------------------------------------------------------------------------

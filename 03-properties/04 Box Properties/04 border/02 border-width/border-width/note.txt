@@ -1,0 +1,24 @@
+border-width
+=============				 
+1)border-width:10px;
+               TRBL
+
+2)border-width:10px 20px;
+                TB   RL
+				
+3)border-width:10px 20px 30px;
+                TB   R      L	
+
+4)border-width:10px 20px 30px 40px;
+                 T    R    L   B
+				 
+				
+5)border-width:0px;
+               TRBL	
+
+6)border-width:px px px px;
+                T    R   L	   B
+
+7)border-width:0px 20px 0px 0px;
+                T    R   L	   B				
+=====================================

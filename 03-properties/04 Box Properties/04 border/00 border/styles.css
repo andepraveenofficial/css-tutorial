@@ -1,0 +1,9 @@
+.myBtn1{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: orange;
+}
+
+.myBtn2{
+    border: 5px dashed orange;
+}

@@ -1,0 +1,30 @@
+
+div{
+    width: 300px;
+    height:300px;
+    margin:10px;
+    padding:10px;
+    box-shadow:0 0 10px black;
+    background-image:url("./source/bird.jpg");
+}
+
+.bg-repeatXY{
+    background-repeat:repeat;
+}
+
+
+.bg-repeatX{
+    background-repeat:repeat-x;
+}
+
+.bg-repeatY{
+    background-repeat:repeat-y;
+}
+
+.bg-repeat-no{
+    background-repeat:no-repeat;
+}
+
+.bg-cover{
+    background-size: cover;
+}

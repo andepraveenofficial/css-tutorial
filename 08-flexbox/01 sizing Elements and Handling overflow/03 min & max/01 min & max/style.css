@@ -1,0 +1,10 @@
+
+
+/*The min-height & min-width CSS properties can be used to define the minimum sizes of an element.*/
+/*The max-height & max-width CSS properties can be used to restrict the sizes of an element.*/
+
+.my-container{
+    background-color: chocolate;
+    min-height:600px;
+    max-width:400px;
+}

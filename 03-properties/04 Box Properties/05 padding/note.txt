@@ -1,0 +1,23 @@
+padding
+=======
+padding-direction
+-----------------------
+1) padding-top:px;
+2) padding-right:px;
+3) padding-bottom:px;
+4) padding-left:px;
+=======================
+shortcut
+-----------------------
+1)padding:px;
+       TRBL
+	   
+2)padding:px px;
+         TB  RL
+		 
+3)padding:px px px;
+          T RL   B
+		  
+4)padding:px px px px;
+          T  R  B  L
+=======================

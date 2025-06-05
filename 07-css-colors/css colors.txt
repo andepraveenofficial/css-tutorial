@@ -1,0 +1,7 @@
+css colors
+==========================
+1) texual , transparent
+2) rgb , rgba
+3)hsl , hsla
+4) hex , hexa
+==========================

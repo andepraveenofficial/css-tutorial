@@ -1,0 +1,11 @@
+.pixel-box{
+    padding:10px;
+    background-color: orange;
+    width:300px;
+}
+
+.percentage-box{
+    padding:10px;
+    background-color: orange;
+    width:40%;
+}

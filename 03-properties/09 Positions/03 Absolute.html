@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Positions</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container{
+      width:500px;
+      height:500px;
+      background-color:grey;
+      position:relative;
+      left:200px;
+
+    }
+
+    .absolute-style{
+      position: absolute;
+      top: 200px;
+      left: 200px;
+    }
+  </style>
+</head>
+<body>
+<div class="box box1">1</div>
+<div class="container">
+  <div class="box box2">2</div>
+  <div class="box box3 absolute-style">3 Absolute</div>
+</div>
+<div class="box box4">4</div>
+<div class="box box5">5</div>
+</body>
+</html>

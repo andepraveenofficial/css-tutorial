@@ -1,0 +1,21 @@
+
+
+.box{
+    width:300px;
+    height:100px;
+    margin:10px;
+    background-color:yellow;
+}
+
+/* It takes default border width*/
+/* It takes default border color */
+/*  some elements doesn't take border by default but some does*/
+
+.border-default-width{
+    border-style: solid; 
+}
+
+.border-width{
+    border-style: solid; 
+    border-width:10px;
+}

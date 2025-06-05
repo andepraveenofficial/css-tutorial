@@ -1,0 +1,9 @@
+
+input[type]{
+    padding:10px;
+    border-radius: 10px;
+}
+
+input[type="password"]{
+    background-color: orange;
+}

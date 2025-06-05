@@ -1,0 +1,40 @@
+div{
+    border:solid 2px black;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+p{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: orange;
+    width: 150px;
+    height:150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+/*-------Animation---------*/
+
+.myAnimation:hover{
+    animation:animationEffects 2s infinite linear 1s;
+}
+
+@keyframes animationEffects {
+    0%{
+        transform:rotate(0deg);
+        border:solid 8px green;
+    }
+
+    50%{
+        transform:rotate(180deg);
+        border:solid 8px red;
+    }
+
+    100%{
+        transform:rotate(360deg);
+        border:solid 8px blue;
+    }
+}

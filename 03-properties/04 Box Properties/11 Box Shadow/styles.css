@@ -1,0 +1,6 @@
+.my-container{
+    background-color: orange;
+    width: 200px;
+    height:200px;
+    box-shadow:0 0 30px black;
+}

@@ -1,0 +1,27 @@
+
+.my-background{
+    background-image:url("../source/mountain.jpg");
+}
+
+div div{
+    height: 100px;
+    width:200px;
+}
+.rgb{
+    background-color: rgb(234,67,53);
+}
+.hex{
+    background-color: #ea4335;
+}
+.hsl{
+    background-color: hsl(4,81%,56%);
+}
+.rgba{
+    background-color: rgba(234,67,53,0.5);
+}
+.hsla{
+    background-color: hsla(4,81%,56%,0.5);
+}
+.hexa{
+    background-color: #ea433560;
+}

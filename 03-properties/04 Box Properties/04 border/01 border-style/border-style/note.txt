@@ -1,0 +1,23 @@
+border-style
+============
+1)border-style:solid;
+                TRBL
+				
+2)border-style:solid dashed;
+                 TB    RL
+				 
+3)border-style:solid dashed dotted;
+                 TB    R      L		
+				 
+4)border-style:solid dashed dotted double;
+                 T    R      L		  B
+
+5)border-style:none;
+                TRBL	
+				
+6)border-style:none none none none;
+                T    R   L	   B	
+
+7)border-style:none dashed none none;
+                 T    R   L	   B					
+==========================================

@@ -1,0 +1,16 @@
+Align self:
+===========
+The align self property specifies the alignment of individual flex items along the cross axis.
+------------
+Align self property can have following values:
+----------
+flex-start
+center 
+flex-end
+stretch
+auto(default)
+...etc
+==================
+If the value of align-self is auto, then the align-items value of its Flex container gets inherited.
+=========================
+

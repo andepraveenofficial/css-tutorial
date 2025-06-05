@@ -1,0 +1,11 @@
+Align Items:
+=============
+The align-items property specifies the alignment of flex items along the cross-axis.
+---------------
+Align items property can have the following values:
+--------------------
+stretch (default)=> will strtch its available height.
+flex-start => will be at the starting of the flex container.
+center => will be at the center of the available height.
+flex-end => will be at the ending point of the available height.
+===================

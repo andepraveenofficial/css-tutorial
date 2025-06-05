@@ -1,0 +1,47 @@
+div{
+    border:solid 2px black;
+    margin:10px;
+    text-align: center;
+}
+
+p{
+    width:150px;
+    height:150px;
+    background-color:orange;
+    box-shadow: 0 0 10px black;
+    margin:10px;
+}
+
+/*-------transform--------*/
+
+.move-X:hover{
+    transform: scaleX(2);
+}
+
+.moveX:hover{
+    transform: scaleX(0.5);
+}
+
+.move-Y:hover{
+    transform: scaleY(2);;
+}
+
+.moveY:hover{
+    transform: scaleY(0.5);;
+}
+
+.move-X-Y:hover{
+    transform: scale(0.5, 0.5);
+}
+
+.move-XY:hover{
+    transform: scale(0.5, 2);
+}
+
+.moveX-Y:hover{
+    transform: scale(2, 0.5);
+}
+
+.moveXY:hover{
+    transform: scale(2, 2);
+}

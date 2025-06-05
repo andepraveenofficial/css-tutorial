@@ -1,0 +1,33 @@
+border
+================================
+1)border-style:styleName;
+
+2)border-style:styleName;
+2)border-width:size;
+
+3)border-style:style;
+3)border-color:color;
+================================
+4)shortcut{
+   border:styleName width color;
+}
+
+5)border:none;
+==================================
+6)border-direction:styleName size color;
+-----------------------------------------
+1)border-top:styleName size color;
+2)border-right:styleName size color;
+3)border-bottom:styleName size color;
+4)border-left:stylNamee size color;
+==============================================
+7)border-direction-propertyType:propertyValue;
+==============================================
+7)border-direction-propertyType:styleName size color;
+==============================================
+information:
+--------------
+width -> px , cm , mm
+style -> solid , dotted , dashed , double
+color -> color , hex , rgb
+=========================================

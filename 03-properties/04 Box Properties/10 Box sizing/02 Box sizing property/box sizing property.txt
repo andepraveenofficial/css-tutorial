@@ -1,0 +1,8 @@
+Box-sizing property
+====================
+The box-sizing CSS property sets how the total width and height of an element are calculated.
+-------
+Box-Sizing property has the following values:
+1) content-box (default)
+2) border-box
+===================

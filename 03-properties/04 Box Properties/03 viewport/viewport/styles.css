@@ -1,0 +1,14 @@
+
+.card{
+    background-color:lightgreen;
+    width:100vw;
+    height: 100vh;
+}
+
+.heading{
+    color:green;
+}
+
+.paragraph{
+    color:orange;
+}

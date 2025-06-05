@@ -1,0 +1,29 @@
+margin
+======
+margin-direction
+--------------------
+1) margin-top:px;
+2) margin-right:px;
+3) margin-bottom:px;
+4) margin-left:px;
+======================
+shortcut
+----------------------
+1)margin:px;
+        TRBL
+	   
+2)margin:px px;
+         TB  RL
+		 
+3)margin:px px px;
+          T RL  B
+		  
+4)margin:px px px px;
+          T  R  B  L
+=======================
+margin special value:
+---------------------
+margin:auto;
+margin:50px auto 50px auto;
+===============
+

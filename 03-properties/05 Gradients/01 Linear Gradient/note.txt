@@ -1,0 +1,10 @@
+Color Gradient:
+--------------------
+Direction:
+------------
+to left
+to right
+to top
+to bottom
+deg => degrees
+====================

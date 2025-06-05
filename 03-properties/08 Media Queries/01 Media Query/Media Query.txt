@@ -1,0 +1,21 @@
+Media Query:
+=============
+Media queries play a crucial part while developing Responsive Layouts.
+using Media queries, you can apply CSS based on the device type (printers, Tvs) and media features(viewport width).
+-----------------------
+syntax:
+--------
+@media media-type and (media-feature-expression){
+/* CSS rules go here */}
+=========================
+Media Types:
+------------
+Media types describe the general category of devices.
+possible types of nedia are:
+screen => For all screened devices (mobile, laptops, tablets, ...etc)
+print = For printers
+tv => For Televisions
+all => Matches all types of devices and more...
+================
+
+

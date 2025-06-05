@@ -1,0 +1,20 @@
+
+.myLink{
+    text-decoration: none;
+}
+
+.myLink:link{
+    color:red;
+}
+
+.myLink:hover{
+    color:yellow;
+}
+
+.myLink:active{
+    color: lightgreen;
+}
+
+.myLink:visited{
+    color:green;
+}

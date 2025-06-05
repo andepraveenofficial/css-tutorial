@@ -1,0 +1,32 @@
+
+.box{
+    width:100px;
+    height:100px;
+    background-color: orange;
+}
+
+.box1{
+    border-style:solid;
+    border-width: 5px;
+    border-color:greenyellow;
+}
+
+/*write shorthand border properties*/
+/*border: border-width border-style border-color*/
+.box2{
+    border:5px solid greenyellow;
+}
+
+/*To specify the border on one of the four sides of an HTML element.
+border-top
+border-bottom
+border-right
+border-left*/
+.box3{
+    border-left:5px solid greenyellow;
+}
+
+/* remove border */
+.myBtn{
+    border-top:none;
+}

@@ -1,0 +1,15 @@
+border-color
+=============				 
+1)border-color:red;
+               TRBL
+
+2)border-color:red green;
+                TB   RL
+				
+3)border-color:red green blue;
+                TB   R      L	
+
+4)border-color:red green blue pink;
+                 T    R    L   B
+				 				
+=====================================

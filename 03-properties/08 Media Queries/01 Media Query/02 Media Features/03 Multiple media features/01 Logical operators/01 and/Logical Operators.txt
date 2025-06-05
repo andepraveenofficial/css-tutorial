@@ -1,0 +1,22 @@
+Logical Operators:
+===================
+and  
+---
+using and operator can combine mutiple Media Features.
+------------
+syntax:
+--------
+@media (media-feature-expression) and (media-feature-expression){
+/* CSS rules go here */
+}
+
+==============
+we can also join media feature with a media type.
+----------
+syntax:
+-------
+@media media-type and (media-feature-expression){
+/* CSS rules go here */
+}
+
+

@@ -1,0 +1,41 @@
+div{
+    border:solid 2px black;
+    margin:10px;
+    text-align: center;
+}
+
+p{
+    width:150px;
+    height:150px;
+    background-color:orange;
+    box-shadow: 0 0 10px black;
+    margin:10px;
+    transition:all 3s;
+}
+
+/*-------Transform--------*/
+
+.move-X:hover{
+    transform: rotateX(-50deg);
+}
+
+.moveX:hover{
+    transform: rotateX(50deg);
+}
+
+.move-Y:hover{
+    transform: rotateY(-50deg);
+}
+
+.moveY:hover{
+    transform: rotateY(50deg);
+}
+
+.move-Z:hover{
+    transform: rotateZ(-50deg);
+}
+
+.moveZ:hover{
+    transform: rotateZ(50deg);
+}
+

@@ -1,0 +1,45 @@
+div{
+    border:solid 2px black;
+    margin:10px;
+}
+
+p{
+    width:150px;
+    height:150px;
+    background-color:orange;
+    box-shadow: 0 0 10px black;
+    margin:10px;
+}
+
+/*-------transform--------*/
+.move-X:hover{
+    transform: translateX(-20px);
+}
+
+.moveX:hover{
+    transform: translateX(20px);
+}
+
+.move-Y:hover{
+    transform: translateY(-20px);
+}
+
+.moveY:hover{
+    transform: translateY(20px);
+}
+
+.move-X-Y:hover{
+    transform: translate(-20px, -20px);
+}
+
+.move-XY:hover{
+    transform: translate(-20px, 20px);
+}
+
+.moveX-Y:hover{
+    transform: translate(20px, -20px);
+}
+
+.moveXY:hover{
+    transform: translate(20px, 20px);
+}

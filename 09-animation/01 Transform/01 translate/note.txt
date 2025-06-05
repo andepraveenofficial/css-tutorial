@@ -1,0 +1,6 @@
+translate :
+------------------------------------
+1)transform:translateX(px);  |
+1)transform:translateY(px);  | => we can give +ve  or -ve
+1)transform:translate(X,Y);  |
+=====================

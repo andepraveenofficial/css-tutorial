@@ -1,0 +1,8 @@
+selector priority
+-------------------
+1) !important
+2) inline styles
+3) id selector
+4) class selector
+5) tag selector
+=====================

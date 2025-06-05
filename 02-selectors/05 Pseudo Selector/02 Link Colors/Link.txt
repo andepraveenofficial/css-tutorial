@@ -1,0 +1,7 @@
+Link
+======
+selector:link => a normal unvisited link
+selector:hover => cursor on link
+selector:activate => for active situation
+selector:visited => for visited link
+==========================================

@@ -1,0 +1,13 @@
+psedo selector
+==================
+psedo selector is a dynamic selector
+-----------------------------
+events
+-------
+focus
+hover
+=======================
+psedo selector syntax
+----------------------
+selector:event
+=======================

@@ -1,0 +1,28 @@
+border-radius
+==============
+1)border-top-right-radius:10px;
+2)border-bottom-right-radius:10px;
+3)border-bottom-left-radius:10px;
+4)border-top-left-radius:10px; 
+================================    
+1)border-radius:10px;
+		        TRBL
+		 
+2)border-radius: 10px 20px;
+                  TB   RL
+	
+3)border-radius: 10px 20px 30px;
+                  TB   R      L
+	
+4)border-radius:10px 20px 30px 40px;	
+                 T    R    L     B
+		 
+5)border-radius:none;
+                TRBL	
+		
+6)border-radius:none none none none;
+                  T    R   L    B
+
+7)border-radius:none 20px none none;
+                 T    R   L	   B	
+========================================

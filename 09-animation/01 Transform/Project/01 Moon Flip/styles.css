@@ -1,0 +1,52 @@
+
+
+.container{
+    width:500px;
+    height:300px;
+    margin:100px auto;
+    position:relative;
+    border-radius:10px;
+    box-shadow:0 0 10px black;
+    overflow:hidden;
+}
+
+.container img{
+    width:inherit;
+    height:inherit;
+    border-radius:10px;
+    transition:all 2s;
+}
+
+.container .content{
+    position:absolute;
+    top:0;
+    left:0;
+    color:white;
+    font-family:serif;
+    background-color:red;
+    width:50%;
+    height:100%;
+    padding:20px;
+    box-sizing:border-box;
+    transform:perspective(400px) rotateY(80deg);
+    /*------stick on left----------*/
+    transform-origin:left;
+    border-radius:10px;
+}
+
+.container:hover .content{
+    transform:perspective(400px) rotateY(0deg);
+    transition:all 2s;
+}
+
+
+body{
+    background-color:grey;
+}
+
+
+.container:hover img{
+    transform:scale(1.2,1.2);
+}
+
+

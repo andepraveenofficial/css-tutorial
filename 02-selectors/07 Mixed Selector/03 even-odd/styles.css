@@ -1,0 +1,8 @@
+.list-container li:nth-child(odd){
+    background-color:green;
+}
+
+.list-container li:nth-child(even){
+    background-color:orange;
+}
+

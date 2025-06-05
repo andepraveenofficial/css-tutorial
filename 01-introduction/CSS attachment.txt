@@ -1,0 +1,17 @@
+css 
+============================================
+css => cascading style sheets
+--------------------------------------------
+we can use css in 2 ways :
+                           1)Internal css
+                           2)External css
+---------------------------------------------
+1)Internal css :
+                 1)inline CSS
+	               2)body section CSS
+                 3)head section CSS
+---------------------------------------------				 
+2)External css :
+                1)external css file
+=============================================
+				 

@@ -1,0 +1,100 @@
+
+.box{
+    width:100px;
+    height:100px;
+    box-shadow:0 0 5px black;
+}
+
+.a{
+    width:300px;
+    height:300px;
+    box-shadow:0 0 10px black;
+    position:relative;
+}
+
+.box1{
+    background-color:red;
+    position:absolute;
+    left:10px;
+    top:10px;
+}
+
+
+
+.box2{
+    background-color:yellow;
+    position:absolute;
+    left:20px;
+    top:20px;
+
+}
+
+.box3{
+    background-color:green;
+    position:absolute;
+    left:30px;
+    top:30px;
+}
+
+.box4{
+    background-color:pink;
+    position:absolute;
+    left:40px;
+    top:40px;
+}
+
+.box5{
+    background-color:orange;
+    position:absolute;
+    left:50px;
+    top:50px;
+}
+
+
+
+.b{
+    width:300px;
+    height:300px;
+    box-shadow:0 0 10px black;
+    position:relative;
+}
+
+.box6{
+    background-color:red;
+    position:absolute;
+    left:10px;
+    top:10px;
+    z-index:5;
+}
+
+.box7{
+    background-color:yellow;
+    position:absolute;
+    left:20px;
+    top:20px;
+    z-index:4;
+}
+
+.box8{
+    background-color:green;
+    position:absolute;
+    left:30px;
+    top:30px;
+    z-index:3;
+}
+
+.box9{
+    background-color:pink;
+    position:absolute;
+    left:40px;
+    top:40px;
+    z-index:2;
+}
+
+.box10{
+    background-color:orange;
+    position:absolute;
+    left:50px;
+    top:50px;
+    z-index:1;
+}

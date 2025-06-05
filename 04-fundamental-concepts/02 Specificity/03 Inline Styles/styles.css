@@ -1,0 +1,19 @@
+
+/*
+class selector has more priority than Tag selector.
+Id selector has more priority than class Selector.
+Inline styles has more priority than Id selector.
+*/
+
+
+h1{
+    color:orange;
+}
+
+.heading-element{
+    color: green;
+}
+
+#headingElement{
+    color: blue;
+}

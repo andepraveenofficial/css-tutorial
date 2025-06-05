@@ -1,0 +1,10 @@
+
+/* class selector has more priority than Tag selector*/
+
+h1{
+    color:orange;
+}
+
+.heading-element{
+    color: green;
+}

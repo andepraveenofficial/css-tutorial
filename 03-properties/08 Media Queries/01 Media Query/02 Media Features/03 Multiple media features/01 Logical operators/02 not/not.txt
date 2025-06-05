@@ -1,0 +1,17 @@
+not:
+=====
+The not operator is a Media Query Modifier. It negates the entire Media Query result.
+If you use the not operator, you must also specify a media type.
+-------------
+wrong syntax:
+-----------
+@media not (min-width:600px) and (max-width:800px){
+  /* CSS rules go here */
+}
+---------------------
+correct syntax:
+----------------
+@media not screen and (min-width:600px){
+	/* CSS rules go here */
+}
+

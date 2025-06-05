@@ -1,0 +1,19 @@
+
+body{
+    height:3000px;
+}
+
+div{
+    width: 300px;
+    height:300px;
+    margin:10px;
+    padding:10px;
+    box-shadow:0 0 10px black;
+    background-image:url("./source/lion.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.shortcut{
+    background:red url("./source/lion.jpg") no-repeat scroll center center;
+}

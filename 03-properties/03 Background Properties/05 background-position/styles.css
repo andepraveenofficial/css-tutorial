@@ -1,0 +1,51 @@
+
+div{
+    width: 300px;
+    height:300px;
+    margin:10px;
+    padding:10px;
+    box-shadow:0 0 10px black;
+    background-image:url("./source/bird.jpg");
+    background-repeat: no-repeat;
+}
+
+/*---background Position---*/
+
+.top-left{
+    background-position: top left;
+}
+
+.top-center{
+    background-position: top center;
+}
+
+.top-right{
+    background-position: top right;
+}
+
+.center-right{
+    background-position: center left;
+}
+
+.center-center{
+    background-position: center center;
+}
+
+.center-left{
+    background-position: center right;
+}
+
+.bottom-left{
+    background-position: bottom left;
+}
+
+.bottom-center{
+    background-position: bottom center;
+}
+
+
+.bottom-right{
+    background-position: bottom right;
+}
+
+

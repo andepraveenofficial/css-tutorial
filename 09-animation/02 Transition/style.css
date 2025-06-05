@@ -1,0 +1,54 @@
+div{
+    border:solid 2px black;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+p{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: orange;
+    width: 150px;
+    height:150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    /*---Transform---*/
+
+
+}
+
+
+/*-----Transition---------*/
+
+.effect1:hover{
+    transform: translateX(500px);
+    transition: all;
+}
+
+.effect2:hover{
+    transform: translateX(500px);
+    transition: all;
+    transition-duration: 4s;
+}
+
+.effect3:hover{
+    transform: translateX(500px);
+    transition: all;
+    transition-duration: 4s;
+    transition-timing-function: ease-out;
+}
+
+.effect4:hover{
+    transform: translateX(500px);
+    transition: all;
+    transition-duration: 4s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+.shortcut:hover{
+    transform:translate(400px);
+    transition:all 4s ease-out 1s;
+}

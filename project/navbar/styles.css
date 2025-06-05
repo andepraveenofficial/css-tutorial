@@ -1,0 +1,30 @@
+body{
+	margin:0px;
+	height:3000px;
+}
+
+.navbar{
+	background-image:linear-gradient(45deg,lightgreen,lightpink,orange,blue);
+	padding:10px;
+	font-family:Arial,sans-serif;
+	/*-----position sticky*/
+	position:sticky;
+	top:0;
+	
+}
+
+.navbar a{
+	color:white;
+	text-decoration:none;
+	font-size:18px;
+	padding:10px;
+	display:inline-block;
+}
+
+.navbar a:hover{
+	background-image:radial-gradient(lightgreen,lightpink,orange,black);
+	color:black;
+	border-radius:5px;
+	box-shadow:0 0 10px white;
+}
+

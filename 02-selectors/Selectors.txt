@@ -1,0 +1,23 @@
+selectors :
+============
+selectors are 8 types :
+-----------------------
+1)Tag selector = same kind of tags selection
+2)Id selector = only one particular element selection
+3)Class selector = group of elements selection
+4)Attribute selector
+5)Pseudo selector
+6)Mixed selector 
+7)Group selection
+8)Universal Selector 
+============================
+html  
+---------
+class="selectorName"
+-----------------------------
+css
+-----
+.selectorName
+=====================================
+class="selectorName" => .selectorName
+=====================================

@@ -1,0 +1,7 @@
+
+.parent .child{
+    padding:10px;
+    color:orange;
+    background-color: green;
+    border-radius: 10px;
+}

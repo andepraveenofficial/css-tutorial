@@ -1,0 +1,9 @@
+box-shadow
+===========
+box-shadow:x y blur color;
+---------------------------
+example:
+-------
+box-shadow:0 0 10px black;
+=========================================
+           

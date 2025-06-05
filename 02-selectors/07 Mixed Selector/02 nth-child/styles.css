@@ -1,0 +1,12 @@
+.list-container li:first-child{
+    background-color:green;
+}
+
+.list-container li:last-child{
+    background-color:orange;
+}
+
+
+.list-container li:nth-child(4){
+    background-color:red;
+}

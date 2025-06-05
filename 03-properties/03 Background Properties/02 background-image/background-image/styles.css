@@ -1,0 +1,14 @@
+
+.card{
+    height:300px;
+    width: 500px;
+    background-image: url("source/bg-image.jpg");
+}
+
+.heading{
+    color:green;
+}
+
+.paragraph{
+    color:orange;
+}

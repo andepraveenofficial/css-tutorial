@@ -1,0 +1,39 @@
+body{
+	margin:0px;
+}
+
+.sidebar{
+	background-image:linear-gradient(45deg,lightgreen,lightpink,orange,blue);
+	float:left;
+	width:200px;
+	text-align:center;
+	font-family:Arial,sans-serif;
+	box-shadow:0 0 10px black;
+	position:fixed;
+	height:100%;
+	padding:10px;
+	
+}
+
+.sidebar a{
+	display:block;
+	color:white;
+	text-decoration:none;
+	padding:15px 25px;
+	font-size:18px;
+}
+
+.sidebar a:hover{
+	background-image:radial-gradient(lightgreen,lightpink,orange,black);
+	color:black;
+	border-radius:50px;
+	box-shadow:0 0 10px white;
+}
+
+.fa-circle-user{
+	font-size:100px;
+	border:10px solid lightblue;
+	border-radius:50%;
+	box-shadow:0 0 10px red;
+	margin-bottom:15px;
+}

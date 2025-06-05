@@ -1,0 +1,15 @@
+Flex Direction:
+================
+The Flex Direction specifies the direction of the flex items in the Flexbox Container.
+when working with Flexbox layout, we need to think in terms of two axes.
+-----------
+Main axis => It is specified by the flex-direction property.
+Cross axis => It runs perpendicular to the main axis.
+======================
+Flex Direction Property can have the following values.
+-------------------
+row => Direction of the flex items in harizontal.
+column => Direction of the flex items is vertical.
+========================
+
+

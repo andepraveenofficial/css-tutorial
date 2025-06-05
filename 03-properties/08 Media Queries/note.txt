@@ -1,0 +1,5 @@
+Media Queries
+----------------
+Responsiveness :
+ perfectly fit for all the different screen sizes.
+==================

@@ -1,0 +1,8 @@
+word
+=========================
+word-spacing
+-------------------------
+1) word-spacing:px;
+2) word-spacing:0px;
+3) word-spacing:-px;
+=========================

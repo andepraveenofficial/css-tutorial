@@ -1,0 +1,8 @@
+The meta element is used to provide additional important information about HTML document.
+
+1) Name => specifies the type of meta element it is, what type of information it contains. viewport gives instructions to browsers on how to control the page's dimensions and scaling.
+2) content => specifies the actual meta content.
+=================
+
+
+

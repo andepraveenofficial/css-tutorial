@@ -1,0 +1,18 @@
+transition:
+------------
+transition is used for smooth transformation.
+--------
+1)transition-name:all / width / height ;
+2)transition-duration: s / ms;
+3)transition-timing-function:linear / ease-in / ease-out;
+4)transition-delay:s / ms;
+-----------------
+linear => slow start and slow end
+ease-in => slow start and fast end
+ease-out => fast start and slow end
+ease-in-out => fast start and fast end
+-----------------
+shortcut{
+transition:name duration timming-function delay;
+}
+================

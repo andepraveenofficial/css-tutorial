@@ -1,0 +1,6 @@
+The flex-grow property specifies how flex items Scale Up their size based on the available space.
+Flex Grow property has the following values:
+-----------
+0 (default)
++ve values
+===================

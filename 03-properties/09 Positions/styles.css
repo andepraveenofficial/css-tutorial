@@ -1,0 +1,25 @@
+.box{
+    width:200px;
+    height:200px;
+    box-shadow:0 0 5px black;
+}
+
+.box1{
+    background-color:red;
+}
+
+.box2{
+    background-color:yellow;
+}
+
+.box3{
+    background-color:green;
+}
+
+.box4{
+    background-color:pink;
+}
+
+.box5{
+    background-color:orange;
+}

@@ -1,0 +1,24 @@
+Positions :
+------------
+position properties :
+--------------------
+1)position:static;
+2)position:relative;
+3)position:absolute;
+4)position:fixed;
+5)position:sticky;
+----------------------------------------------------------
+1)static => default position of any html element 
+2)relative => this positioned relative to its own
+3)absolute => this is positioned relative to its parent
+4)fixed => this is to fix an element in the given position
+5)sticky => this is to stick an element in the given position
+-----------------------------------------------------------
+supporting properties:
+------------------------
+top,right,bottom,left
+--------------------------------------------------------
+6)z-index =>  layers position
+---------------------------------------
+z-index:1;
+==========================================

@@ -1,0 +1,41 @@
+
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>CSS Colors</title>
+    <style>
+        .my-style{
+            color:hsl(80,30%,80%);
+            background-color:hsl(60,80%,40%);
+            /*
+            hue => degrees on color wheel = 0-360 degrees
+            saturation => darkness % = 0-100%
+            lightness => lightness % = = 0-100%
+            */
+        }
+        .my-style-transparent{
+            color:hsl(80,30%,80%);
+            background-color:hsla(60,80%,40%, 0.2);   /*---> 0 => full transparent , 1 => No transparent <---*/
+        </
+        }
+    </style>
+
+</head>
+<body>
+<h1>hsl => (hue, saturation, lightness)</h1>
+
+
+<div class="my-style">
+    <h1 class="my-style">HSL Color</h1>
+</div>
+
+<hr/>
+
+<h1>hsla => (hue, saturation, lightness, alpha)</h1>
+
+<div>
+    <h1 class="my-style-transparent">RGB Transparent Color</h1>
+</div>
+</body>
+</html>

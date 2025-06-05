@@ -1,0 +1,18 @@
+
+.center{
+    width:200px;
+    background-color: green;
+    margin: auto;
+}
+
+.left{
+    width:200px;
+    background-color: green;
+    margin-right: auto;
+}
+
+.right{
+    width:200px;
+    background-color: green;
+    margin-left: auto;
+}

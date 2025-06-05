@@ -1,0 +1,7 @@
+.paragraph {
+    border: 2px solid blue;
+    width: 150px;
+    min-height: 150px;
+    max-height: 180px;
+    overflow: auto;
+}

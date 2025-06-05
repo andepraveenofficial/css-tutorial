@@ -1,0 +1,45 @@
+div{
+    border:solid 2px black;
+    margin:10px;
+    text-align: center;
+}
+
+p{
+    width:150px;
+    height:150px;
+    background-color:orange;
+    box-shadow: 0 0 10px black;
+    margin:10px;
+    transition:all 3s;
+}
+
+/*-------Transform--------*/
+
+.move-X:hover{
+    transform: perspective(300px) rotateX(-50deg);
+}
+
+.moveX:hover{
+    transform: perspective(300px) rotateX(50deg);
+}
+
+.move-Y:hover{
+    transform: perspective(300px) rotateY(-50deg);
+}
+
+.moveY:hover{
+    transform: perspective(300px) rotateY(50deg);
+}
+
+
+.move-Z:hover{
+    transform: perspective(300px)  rotateZ(-50deg);
+}
+
+.moveZ:hover{
+    transform: perspective(300px)  rotateZ(50deg);
+}
+
+.moveXYZ:hover{
+    transform: perspective(300px) rotate3d(1,1,1, 50deg);
+}

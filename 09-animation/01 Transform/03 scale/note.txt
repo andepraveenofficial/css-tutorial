@@ -1,0 +1,6 @@
+Scale:
+-----------------------------
+transform:scaleX(2 times);    |
+transform:scaleY(2 times);    |=> scale -> zooming -> 1 = 100%
+transform:scale(X,Y); 
+==============================
